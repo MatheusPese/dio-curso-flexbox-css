@@ -9,3 +9,4 @@ Repositório para a realização de atividades propostas pelo curso introdutóri
 - Atividade 5 - [justify-content](https://matheuspese.github.io/dio-curso-flexbox-css/Exercicios/4-justify-content.html)
 - Atividade 6 - [align-items](https://matheuspese.github.io/dio-curso-flexbox-css/Exercicios/5-align-items.html)
 - Atividade 7 - [align-content](https://matheuspese.github.io/dio-curso-flexbox-css/Exercicios/6-align-content.html)
+- Atividade 8 - [flex-grow](https://matheuspese.github.io/dio-curso-flexbox-css/Exercicios/7-flex-grow.html)
