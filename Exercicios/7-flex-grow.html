@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fundamentos - flex grow</title>
+
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 300px;
+            justify-content: center;
+        }
+        .item{
+            margin: 2px;
+            padding: 8px;
+            text-align: center;
+            color: white;
+        }
+
+        .fg-0{
+            background-color: orangered;
+            flex-grow: 0;
+        }
+        .fg-1{
+            flex-grow: 1;
+            background-color: blueviolet;
+        }
+        .fg-2{
+            background-color: royalblue;
+            flex-grow: 2;
+        }
+        .fg-3{
+            background-color: green;
+            flex-grow:3;
+        }
+    </style>
+</head>
+<body>
+    <p>flex-grow:0</p>
+    <div class="container">
+        <div class="item fg-0">FG-0</div>
+        <div class="item fg-0">FG-0</div>
+        <div class="item fg-0">FG-0</div>
+        <div class="item fg-0">FG-0</div>
+    </div>
+    <p>flex-grow:1</p>
+    <div class="container">
+        <div class="item fg-1">FG-1</div>
+        <div class="item fg-1">FG-1</div>
+        <div class="item fg-1">FG-1</div>
+        <div class="item fg-1">FG-1</div>
+    </div>
+    <p>flex-grow: alternado</p>
+    <div class="container">
+        <div class="item fg-0">FG-0</div>
+        <div class="item fg-1">FG-1</div>
+        <div class="item fg-0">FG-0</div>
+        <div class="item fg-1">FG-1</div>
+    </div>
+    <p>flex-grow: alternado</p>
+    <div class="container">
+        <div class="item fg-0">Flex Grow 0</div>
+        <div class="item fg-1">FG-1</div>
+        <div class="item fg-0">FG-0</div>
+        <div class="item fg-1">FG-1</div>
+    </div>
+    
+</body>
+</html>
