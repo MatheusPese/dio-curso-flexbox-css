@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fundamentos - flex basis</title>
+    <style>
+        .container{
+            max-width: 300px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .item{
+            background-color: orangered;
+            color: white;
+            text-align: center;
+            margin: 5px;
+            padding: 8px;
+        }
+        .b-auto{
+            flex-basis: auto;
+        }
+        .b-0{
+            flex-basis: 0;
+        }
+        .fg-1{
+            flex-grow: 1;
+        }
+        .fg-2{
+            flex-grow: 2;
+        }
+
+        .w-100{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>flex-basis</h1>
+        <p>The flex-basis CSS property sets the initial main size of a flex item. It sets the size of the content box unless otherwise set with box-sizing.</p>
+    </header>
+
+    <section title=" BASIS: AUTO &#013 &#013 This is the default configuration for flex-basis. &#013 It is defined even when not specifically typed. &#013 It sets the size of the content box automatically.">
+        <p>basis: auto</p>
+        <div class="container ">
+            <div class="item fg-1 b-auto">A 1</div>
+            <div class="item fg-2 b-auto">BBBBBB 2</div>
+            <div class="item fg-1 b-auto">C 3</div>
+            <div class="item fg-2 b-auto">DDD 4</div>
+        </div>
+    </section>
+
+    <section title="BASIS: AUTO + WIDTH &#013 &#013 Even if the basis is automatic, the box-sizing overwrites the flex-basis. 
+    ">
+        <p>basis:auto + with</p>
+        <div class="container ">
+            <div class="item fg-1 b-auto w-100">A 1</div>
+            <div class="item fg-2 b-auto w-100">BBBBBB 2</div>
+            <div class="item fg-1 b-auto w-100">C 3</div>
+            <div class="item fg-2 b-auto w-100">DDD 4</div>
+        </div>
+    </section>
+
+    <section title="BASIS: 0 &#013 &#013 Setting flex-basis to 0 removes sizing of the content box, making the size of the content wrap around.">
+        <p>basis: 0</p>
+        <div class="container ">
+            <div class="item fg-1 b-0">A 1</div>
+            <div class="item fg-2 b-0">BBBBBB 2</div>
+            <div class="item fg-1 b-0">C 3</div>
+            <div class="item fg-2 b-0">DDD 4</div>
+        </div>
+    </section>
+
+    <section title="BASIS: 0 + WIDTH &#013 &#013 Here the flex-basis set to 0 overwrites the values defined by width">
+        <p>basis: 0 + width</p>
+        <div class="container ">
+            <div class="item fg-1 b-0 w-100">A 1</div>
+            <div class="item fg-2 b-0 w-100">BBBBBB 2</div>
+            <div class="item fg-1 b-0 w-100">C 3</div>
+            <div class="item fg-2 b-0 w-100">DDD 4</div>
+        </div>
+    </section>
+</body>
+</html>
