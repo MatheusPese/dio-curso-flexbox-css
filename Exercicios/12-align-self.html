@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fundamentos - align self</title>
+    <style>
+        .container{
+            min-width: 300px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            display: flex;
+        }
+
+        .row{
+            min-width: 300px;
+            max-width: 350px;
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+
+            border: 1px solid black;
+            background-color: lightsalmon;
+            padding-inline: 10px;
+        }
+
+        .column{
+            min-width: 300px;
+            max-width: 350px;
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            
+            border: 1px solid black;
+            background-color: lightblue;
+            padding-inline: 10px;
+        }
+        .container.center{
+            align-items: center;
+        }
+
+        .container.column{
+            flex-direction: column;
+        }
+        .item{
+            background-color: orangered;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .item.center{
+            align-self: center;
+        }
+
+        .item.start{
+            align-self: flex-start;
+        }
+
+        .item.end{
+            align-self: flex-end;
+        }
+
+        .item.baseline{
+            align-self: baseline;
+        }
+
+        .item.stretch{
+            align-self: stretch;
+        }
+
+        .item.auto{
+            align-self: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>ROW</h1>
+    <section class="row">
+        <h2>Default Container</h2>
+        <p>align-self:auto (default) = stretch</p>
+        <section class="container">
+            <div class="item auto" title="auto">AAA</div>
+            <div class="item auto" title="auto">123</div>
+            <div class="item auto" title="auto">Lorem ipsum dolor sit amet consectetur.</div>
+            <div class="item auto" title="auto">Item 4</div>
+        </section>
+
+        <p>align-self stretch</p>
+        <section class="container">
+            <div class="item stretch" title="auto">AAA</div>
+            <div class="item stretch" title="auto">123</div>
+            <div class="item stretch" title="auto">Lorem ipsum dolor sit amet consectetur.</div>
+            <div class="item stretch" title="auto">Item 4</div>
+        </section>
+
+        <h2>Center Container</h2>
+        <p>align-self:auto (default) = center</p>
+        <section class="container center">
+            <div class="item auto" title="auto">AAA</div>
+            <div class="item auto" title="auto">123</div>
+            <div class="item auto" title="auto">Lorem ipsum dolor sit amet consectetur.</div>
+            <div class="item auto" title="auto">Item 4</div>
+        </section>
+
+        <p>align-self:stretch</p>
+        <section class="container center">
+            <div class="item stretch" title="auto">AAA</div>
+            <div class="item stretch" title="auto">123</div>
+            <div class="item stretch" title="auto">Lorem ipsum dolor sit amet consectetur.</div>
+            <div class="item stretch" title="auto">Item 4</div>
+        </section>
+
+        <p>align-self:start</p>
+        <section class="container center">
+            <div class="item start" title="auto">AAA</div>
+            <div class="item start" title="auto">123</div>
+            <div class="item start" title="auto">Lorem ipsum dolor sit amet consectetur.</div>
+            <div class="item start" title="auto">Item 4</div>
+        </section>
+
+        <p>align-self:end</p>
+        <section class="container center">
+            <div class="item end" title="auto">AAA</div>
+            <div class="item end" title="auto">123</div>
+            <div class="item end" title="auto">Lorem ipsum dolor sit amet consectetur.</div>
+            <div class="item end" title="auto">Item 4</div>
+        </section>
+    </section>
+
+    <h1>COLUMN</h1>
+    <section class="column">
+        <h2>Default Container</h2>
+        <p>align-self:auto (default) = stretch</p>
+        <section class="container column">
+            <div class="item auto" title="auto">AAA</div>
+            <div class="item auto" title="auto">123</div>
+            <div class="item auto" title="auto">Lorem ipsum dolor sit amet consectetur.</div>
+            <div class="item auto" title="auto">Item 4</div>
+        </section>
+
+        <p>align-self stretch</p>
+        <section class="container column">
+            <div class="item stretch" title="auto">AAA</div>
+            <div class="item stretch" title="auto">123</div>
+            <div class="item stretch" title="auto">Lorem ipsum dolor sit amet consectetur.</div>
+            <div class="item stretch" title="auto">Item 4</div>
+        </section>
+
+        <h2>Center Container</h2>
+        <p>align-self:auto (default) = center</p>
+        <section class="container column center">
+            <div class="item auto" title="auto">AAA</div>
+            <div class="item auto" title="auto">123</div>
+            <div class="item auto" title="auto">Lorem ipsum dolor sit amet consectetur.</div>
+            <div class="item auto" title="auto">Item 4</div>
+        </section>
+
+        <p>align-self:stretch</p>
+        <section class="container column center">
+            <div class="item stretch" title="auto">AAA</div>
+            <div class="item stretch" title="auto">123</div>
+            <div class="item stretch" title="auto">Lorem ipsum dolor sit amet consectetur.</div>
+            <div class="item stretch" title="auto">Item 4</div>
+        </section>
+
+        <p>align-self:start</p>
+        <section class="container column center  ">
+            <div class="item start" title="auto">AAA</div>
+            <div class="item start" title="auto">123</div>
+            <div class="item start" title="auto">Lorem ipsum dolor sit amet consectetur.</div>
+            <div class="item start" title="auto">Item 4</div>
+        </section>
+
+        <p>align-self:end</p>
+        <section class="container column center  ">
+            <div class="item end" title="auto">AAA</div>
+            <div class="item end" title="auto">123</div>
+            <div class="item end" title="auto">Lorem ipsum dolor sit amet consectetur.</div>
+            <div class="item end" title="auto">Item 4</div>
+        </section>
+    </section>
+</body>
+</html>
