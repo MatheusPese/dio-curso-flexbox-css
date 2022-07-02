@@ -14,3 +14,4 @@ Repositório para a realização de atividades propostas pelo curso introdutóri
 - Atividade 10 - [flex-shrink](https://matheuspese.github.io/dio-curso-flexbox-css/Exercicios/9-flex-shrink.html) 
 - Atividade 11 - [flex](https://matheuspese.github.io/dio-curso-flexbox-css/Exercicios/10-flex.html) 
 - Atividade 12 - [order](https://matheuspese.github.io/dio-curso-flexbox-css/Exercicios/11-order.html) 
+- Atividade 13 - [align-self](https://matheuspese.github.io/dio-curso-flexbox-css/Exercicios/12-align-self.html) 
