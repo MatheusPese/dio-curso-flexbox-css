@@ -13,18 +13,25 @@
         .item{
             background-color: orangered;
             margin: 5px;
-            padding-inline: 10px;
             text-align: center;
             font-size: 24px;
             color: white;
+        }
+
+        .s-0{
+            flex-shrink: 0;
         }
 
         .s-1{
             flex-shrink: 1;
         }
 
-        .s-0{
-            flex-shrink: 0;
+        .s-2{
+            flex-shrink: 2;
+        }
+
+        .s-3{
+            flex-shrink: 3;
         }
 
         .fg-1{
@@ -73,32 +80,32 @@
     <p>flex-shrink: 0 / basis: 100px</p>
     <div class="container">
         <div class="item s-0 fg-1 b-100">A</div>
-        <div class="item s-0 fg-1 b-100">B</div>
+        <div class="item s-0 fg-1">B</div>
         <div class="item s-0 fg-1 b-100">C</div>
-        <div class="item s-0 fg-1 b-100">D</div>
+        <div class="item s-0 fg-1">D</div>
         <div class="item s-0 fg-1 b-100">E</div>
     </div>
     <div class="container">
         <div class="item s-0 fg-1 b-100">A</div>
-        <div class="item s-0 fg-1 b-100">Lorem, ipsum dolor.</div>
+        <div class="item s-0 fg-1">Lorem, ipsum dolor.</div>
         <div class="item s-0 fg-1 b-100">C</div>
-        <div class="item s-0 fg-1 b-100">D</div>
+        <div class="item s-0 fg-1">D</div>
         <div class="item s-0 fg-1 b-100">E</div>
     </div>
 
     <p>flex-shrink: mixed / basis: 100px</p>
     <div class="container">
         <div class="item s-1 fg-1 b-100">A</div>
-        <div class="item s-2 fg-1 b-100">B</div>
+        <div class="item s-2 fg-1">B</div>
         <div class="item s-3 fg-1 b-100">C</div>
-        <div class="item s-2 fg-1 b-100">D</div>
+        <div class="item s-2 fg-1">D</div>
         <div class="item s-1 fg-1 b-100">E</div>
     </div>
     <div class="container">
         <div class="item s-1 fg-1 b-100">A</div>
-        <div class="item s-2 fg-1 b-100">Lorem, ipsum dolor.</div>
+        <div class="item s-2 fg-1">Lorem, ipsum dolor.</div>
         <div class="item s-3 fg-1 b-100">C</div>
-        <div class="item s-2 fg-1 b-100">D</div>
+        <div class="item s-2 fg-1">D</div>
         <div class="item s-1 fg-1 b-100">E</div>
     </div>
 
