@@ -26,15 +26,14 @@ ul li a{
 }
 
 div img{
-    display: block;
     width: 100%;
 }
-header {
+body header{
     background-color: var(--dark-blue);
-    height: 100px;
     display: flex;
     align-items: center;
     color:#fff;
+    padding: 10px;
 }
 
 header .list-items{
@@ -53,7 +52,7 @@ header .menu{
 }
 
 .presentation{
-    height: 100vh;
+    padding:10vh 0;
     align-items: center;
     justify-content: space-between;
 }
@@ -103,4 +102,65 @@ header .menu{
 #quem-somos p{
     margin-bottom: 10px;
     width: 90%;
+}
+
+img{
+    width: 100%;
+}
+
+#services{
+    flex-direction: column;
+    background-color: var(--dark-blue);
+    display: flex;
+
+    padding: 40px;
+    color: #fff;
+}
+#services h2{
+    font-size: 36px;
+}
+#services .container{
+    justify-content: space-around;
+    font-weight: bold;
+    text-align: center;
+    flex-wrap: wrap;
+    padding:10px;
+}
+
+#services a{
+    display: block;
+    color: var(--dark-blue);
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 10px;
+    box-shadow: 2px 2px 3px black, inset 0px -2px gray;
+}
+
+#services a:hover{
+    transform: translate(0,2px);
+    box-shadow: 2px 2px 3px black, inset 0px 0px gray;
+}
+
+#services img{
+    width: 200px;
+    margin:0 auto;
+}
+
+#services header{
+    align-self: flex-start;
+    justify-content: flex-start !important;
+}
+
+#services >.container> .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:340px
+}
+
+#planos{
+
 }
