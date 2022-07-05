@@ -15,3 +15,7 @@ Repositório para a realização de atividades propostas pelo curso introdutóri
 - Atividade 11 - [flex](https://matheuspese.github.io/dio-curso-flexbox-css/Exercicios/10-flex.html) 
 - Atividade 12 - [order](https://matheuspese.github.io/dio-curso-flexbox-css/Exercicios/11-order.html) 
 - Atividade 13 - [align-self](https://matheuspese.github.io/dio-curso-flexbox-css/Exercicios/12-align-self.html) 
+
+## Projeto
+
+- Projeto Final - [Flex Turismos](https://matheuspese.github.io/dio-curso-flexbox-css/Projeto/)
