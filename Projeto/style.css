@@ -65,16 +65,17 @@ header .menu{
     color: var(--dark-blue);
 }
 
-.presentation-text a{
+.btn {
     background-color: var(--dark-blue);
     color: #fff;
     text-align: center;
     border-radius: 30px;
-    width:200px;
+    width:120px;
     display:block;
     text-decoration: none;
-    padding:10px;
+    padding:10px 20px;
     margin: 10px 0;
+    box-shadow: 1px 2.5px 0 rgba(57, 57, 57, 0.275);
 }
 
 #quem-somos{
@@ -162,5 +163,54 @@ img{
 }
 
 #planos{
+    flex-direction: column;
+    min-height: 100vh;
+}
 
+.item-plano{
+    font-size: 16px;
+    flex: 1;
+    width: auto;
+    border: 5px solid var(--dark-blue);
+    margin-right: 40px;
+    padding: 30px 0;
+}
+
+.item-plano .btn{
+    margin: 20px auto;
+}
+.item-plano ul{
+    margin: 30px;
+    
+}
+
+.item-plano li{
+    margin:10px 0;
+}
+
+.item-plano li::before{
+    content:"< ";
+    font-family:"Webdings";
+    color: var(--dark-blue);
+
+}
+
+.list-planos{
+    display:flex;
+    align-items: flex-end;
+}
+
+.item-plano h3{
+    display: flex;
+    font-size:24px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.item-plano h3::after{
+    content:"";
+    background-color:var(--dark-blue);
+    height: 3px;
+    width: 80%;
+    margin: 10px auto ;
 }
