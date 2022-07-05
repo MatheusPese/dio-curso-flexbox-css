@@ -165,6 +165,7 @@ img{
 #planos{
     flex-direction: column;
     min-height: 100vh;
+    padding-top: 30px;
 }
 
 .item-plano{
@@ -213,4 +214,15 @@ img{
     height: 3px;
     width: 80%;
     margin: 10px auto ;
+}
+
+#footer{
+    display: flex;
+    background-color: var(--dark-blue);
+    padding:40px;
+    color: #fff;
+}
+
+#footer .container{
+    justify-content: space-between;
 }
